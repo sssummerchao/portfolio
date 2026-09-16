@@ -1,0 +1,47 @@
+.page {
+  min-height: 100%;
+  position: relative;
+  background-color: #fffbf4 !important;
+}
+
+.home {
+  z-index: 7777;
+  color: var(--black);
+  background-color: transparent;
+  margin-left: 16px;
+  padding: 4px 8px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+  transition: transform 0.15s;
+  display: inline-block;
+  position: fixed;
+  text-decoration: none;
+}
+
+.home:hover {
+  transform: rotate(10deg);
+}
+
+.content {
+  min-height: 100%;
+  background-color: #fffbf4 !important;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 991px) {
+  .home {
+    display: none;
+  }
+}

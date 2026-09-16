@@ -1,0 +1,234 @@
+.page {
+  min-height: 100%;
+  padding-bottom: 80px;
+  background-color: #fffbf4;
+}
+
+.home {
+  z-index: 7777;
+  color: var(--black);
+  background-color: transparent;
+  margin-left: 16px;
+  padding: 4px 8px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+  transition: transform 0.15s;
+  display: inline-block;
+  position: fixed;
+  text-decoration: none;
+}
+
+.home:hover {
+  transform: rotate(10deg);
+}
+
+.section {
+  display: block;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.intro {
+  margin-bottom: 30px;
+}
+
+.title {
+  color: var(--black);
+  letter-spacing: -0.5px;
+  margin: -3px 0 10px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.meta {
+  opacity: 0.65;
+  color: var(--black);
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 19.5px;
+}
+
+.paragraph,
+.paragraphWide {
+  opacity: 0.65;
+  color: var(--black);
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+.paragraphWide {
+  max-width: 800px;
+  margin-bottom: 24px;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 28px;
+}
+
+.smallTitle,
+.eyebrow {
+  width: auto;
+  color: var(--dark-grey);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.eyebrow {
+  opacity: 0.4;
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.heroImg,
+.contentImg {
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.divider {
+  background-color: #e0e0e0;
+  max-width: 860px;
+  height: 1px;
+  margin: 0 0 20px;
+}
+
+.challengeGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 24px 0 40px;
+}
+
+.challengeCard {
+  background-color: var(--card-lt-bg);
+  border-radius: 4px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  text-align: center;
+}
+
+.emoji {
+  max-width: 50%;
+  margin-bottom: 10px;
+}
+
+.challengeTitle {
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.challengeText {
+  max-width: 450px;
+  color: var(--black);
+  text-align: center;
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20.8px;
+}
+
+.feature {
+  margin-bottom: 48px;
+}
+
+.featureTitle {
+  color: var(--black);
+  letter-spacing: -0.2px;
+  margin: 0 0 10px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+@media (max-width: 991px) {
+  .home {
+    display: none;
+  }
+
+  .metaGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .challengeGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 479px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 32px 60px;
+}
+
+.footerIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin: 0;
+  animation: qlo-logo-spin 8s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes qlo-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo {
+    animation: none;
+  }
+}

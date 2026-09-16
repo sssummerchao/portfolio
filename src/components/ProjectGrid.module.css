@@ -1,0 +1,85 @@
+.wrapper {
+  position: relative;
+}
+
+.grid {
+  opacity: 1;
+  background-color: transparent;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 20px 20px 60px;
+  display: block;
+  position: static;
+}
+
+.columns {
+  display: flex;
+  gap: 1rem;
+  max-width: 100%;
+  align-items: flex-start;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 33%;
+  gap: 2rem;
+}
+
+@media (min-width: 1920px) {
+  .grid {
+    display: flex;
+    flex-flow: row;
+    align-items: stretch;
+    padding-top: 20px;
+  }
+
+  .columns {
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1840px;
+    width: 100%;
+  }
+
+  .column {
+    flex: 0 auto;
+    width: 33%;
+    max-width: 33%;
+  }
+}
+
+@media (max-width: 991px) {
+  .columns {
+    flex-flow: column;
+    align-items: center;
+    gap: calc(1.5rem + 20px);
+  }
+
+  .column {
+    width: 100%;
+    max-width: 799px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: calc(2rem + 20px);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    margin: 0;
+    padding: 20px;
+    display: block;
+  }
+
+  .columns {
+    gap: calc(1rem + 20px);
+  }
+
+  .column {
+    gap: calc(0.5rem + 20px);
+  }
+}

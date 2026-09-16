@@ -1,0 +1,61 @@
+:root {
+  --black: #48443c;
+  --background: #fffbf4;
+  --award: #c78500;
+  --home-button: #fffcf4;
+  --card-lt-bg: #f8f4eb;
+  --dark-grey: #acacac;
+  --foreground: var(--black);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  margin-top: 30px;
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: var(--font-general-sans), Arial, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+}

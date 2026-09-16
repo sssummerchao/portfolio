@@ -1,0 +1,143 @@
+.card {
+  -webkit-text-fill-color: inherit;
+  background-image: none;
+  background-clip: border-box;
+  border-radius: 4px;
+  flex-flow: row;
+  max-width: none;
+  margin-bottom: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  color: inherit;
+}
+
+.item {
+  opacity: 1;
+  padding: 0;
+  width: 100%;
+}
+
+.media {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #fff1d4;
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.imageLoaded {
+  opacity: 1;
+}
+
+.media:hover .imageLoaded {
+  opacity: 0.8;
+}
+
+.aspect1 {
+  aspect-ratio: 1;
+}
+
+.aspect32 {
+  aspect-ratio: 3 / 2;
+}
+
+.aspect43 {
+  aspect-ratio: 4 / 3;
+}
+
+/* Slightly taller — used on the 5-card column so bottoms match the 6-card columns */
+.aspect1615 {
+  aspect-ratio: 16 / 15;
+}
+
+.aspect169 {
+  aspect-ratio: 16 / 9;
+}
+
+/* Pin auto media to a fixed ratio so one tall GIF doesn't throw columns off */
+.aspectAuto {
+  aspect-ratio: 4 / 3;
+  min-height: 120px;
+}
+
+.title {
+  opacity: 1;
+  color: var(--black);
+  letter-spacing: 0.2px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-decoration: none;
+}
+
+.tag {
+  opacity: 0.6;
+  color: var(--black);
+  letter-spacing: 0.5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+.award {
+  opacity: 0.8;
+  color: var(--award);
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15.6px;
+}
+
+@media (max-width: 991px) {
+  .aspect1 {
+    aspect-ratio: 3 / 2.5;
+  }
+
+  /* Match left/middle when columns stack */
+  .aspect1615 {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 0;
+  }
+
+  .tag {
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 479px) {
+  .award {
+    margin-bottom: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image {
+    transition: none;
+    opacity: 1;
+  }
+}

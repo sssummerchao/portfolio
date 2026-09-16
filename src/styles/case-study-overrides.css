@@ -1,0 +1,76 @@
+/* Loaded last on case-study routes — forces beige over Webflow leftovers */
+html,
+body {
+  background-color: #fffbf4 !important;
+}
+
+.case-study-page,
+.case-study-html,
+.case-study-html.body {
+  background-color: #fffbf4 !important;
+  margin-top: 0 !important;
+}
+
+.case-study-html .project-section,
+.case-study-html .project-section-footer,
+.case-study-html .w-layout-blockcontainer,
+.case-study-html .w-container,
+.case-study-html .container-with-side-title,
+.case-study-html .container-with-content,
+.case-study-html .container-with-content-preview,
+.case-study-html .container-20 {
+  background-color: transparent !important;
+}
+
+.case-study-html .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 32px 60px;
+  margin-bottom: 0;
+}
+
+.case-study-html .footer-icon {
+  margin: 0;
+  margin-left: 0;
+}
+
+.case-study-html .logo {
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  animation: case-study-logo-spin 8s linear infinite;
+  transform-origin: center center;
+}
+
+@keyframes case-study-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study-html .logo {
+    animation: none;
+  }
+}
+
+.case-study-html .w-video,
+.case-study-html .w-embed {
+  position: relative;
+  width: 100%;
+}
+
+.case-study-html iframe.youtube-embed,
+.case-study-html .w-video iframe,
+.case-study-html .w-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+}
