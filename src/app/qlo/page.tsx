@@ -39,46 +39,18 @@ export default function QloPage() {
       </Link>
 
       <section className={styles.section}>
-        <div className={styles.container}>
+        <div className={styles.containerPreview}>
           <div className={styles.intro}>
-            <h1 className={styles.title}>Qlo</h1>
-            <p className={styles.meta}>4 weeks / 2025</p>
-            <p className={styles.paragraph}>
-              Qlo provides a more personalized shopping experiences through
-              conversational AI, photorealistic try on, and AR-enabled smart
-              mirrors. I led the design and prototype of the smart mirror.
-            </p>
-            <div className={styles.metaGrid}>
-              <div>
-                <p className={styles.smallTitle}>Role</p>
-                <p className={styles.paragraph}>
-                  Experience Design
-                  <br />
-                  Prototyping
-                  <br />
-                  Video Editing
-                </p>
-              </div>
-              <div>
-                <p className={styles.smallTitle}>Team</p>
-                <p className={styles.paragraph}>
-                  Deeya Parikh
-                  <br />
-                  Eldar Gilmanov
-                  <br />
-                  Sanjali Jain
-                </p>
-              </div>
-              <div>
-                <p className={styles.smallTitle}>Tools</p>
-                <p className={styles.paragraph}>
-                  Figma
-                  <br />
-                  After Effect
-                  <br />
-                  Photoshop
-                </p>
-              </div>
+            <div className={styles.dateRow}>
+              <p className={styles.eyebrow}>4 weeks / 2025</p>
+            </div>
+            <div className={styles.introGrid}>
+              <h1 className={styles.title}>Qlo</h1>
+              <p className={styles.overview}>
+                Qlo provides a more personalized shopping experiences through
+                conversational AI, photorealistic try on, and AR-enabled smart
+                mirrors. I led the design and prototype of the smart mirror.
+              </p>
             </div>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -87,7 +59,38 @@ export default function QloPage() {
             src={`${IMG}/qlo-cover.jpg`}
             alt=""
           />
-          <div className={styles.divider} />
+          <div className={styles.metaGrid}>
+            <div className={styles.metaCol}>
+              <p className={styles.eyebrow}>Role</p>
+              <p className={styles.metaText}>
+                Experience Design
+                <br />
+                Prototyping
+                <br />
+                Video Editing
+              </p>
+            </div>
+            <div className={styles.metaCol}>
+              <p className={styles.eyebrow}>Team</p>
+              <p className={styles.metaText}>
+                Deeya Parikh
+                <br />
+                Eldar Gilmanov
+                <br />
+                Sanjali Jain
+              </p>
+            </div>
+            <div className={styles.metaCol}>
+              <p className={styles.eyebrow}>Tools</p>
+              <p className={styles.metaText}>
+                Figma
+                <br />
+                After Effect
+                <br />
+                Photoshop
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -117,10 +120,10 @@ export default function QloPage() {
 
       <section className={styles.section}>
         <div className={styles.container}>
+          <p className={styles.eyebrow}>personal shopping assistant</p>
           <h2 className={styles.title}>
             Qlo is here for all your shopping needs!
           </h2>
-          <p className={styles.eyebrow}>personal shopping assistant</p>
           <p className={styles.paragraphWide}>
             QLO enhances online and in-store shopping by integrating SpreeAI’s
             technology to provide personalized outfit recommendations, AI-driven
