@@ -42,7 +42,7 @@ export const projects: Project[] = [
       "https://cdn.prod.website-files.com/5e4f5dd292480f3bc956bc06/6a0c8733fa6568b266988452_IMG%202709%20optimized.gif",
     link: toLink("/feltspace"),
     column: "left",
-    aspect: "4/3",
+    aspect: "16/15",
   },
   {
     id: "cyclist-safety",

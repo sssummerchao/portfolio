@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s · Summer Chao",
   },
   description:
-    "Designing thoughtful experiences that help people connect with the world and with each other.",
+    "Interaction designer and prototyper exploring how technology can create more meaningful connections between people, environments, and intelligent systems.",
   metadataBase: new URL("https://www.notwinter.me"),
   robots: {
     index: true,

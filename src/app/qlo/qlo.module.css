@@ -135,7 +135,9 @@
 }
 
 .emoji {
-  max-width: 50%;
+  width: 68px;
+  max-width: 68px;
+  height: auto;
   margin-bottom: 10px;
 }
 

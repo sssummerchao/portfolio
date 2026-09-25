@@ -30,10 +30,11 @@ export function Hero() {
         </div>
         <div>
           <p className={styles.bio}>
-            Designing thoughtful experiences that help people connect with the
-            world and with each other. I use rapid prototyping and
-            experimentation to explore emerging technologies and transform
-            ambiguous ideas into meaningful, tangible experiences.
+            I’m an interaction designer and prototyper exploring how technology
+            can create more meaningful connections between people, environments,
+            and intelligent systems. I use rapid prototyping and experimentation
+            to turn emerging technologies and ambiguous ideas into tangible,
+            human-centered experiences.
             <br />
           </p>
         </div>
